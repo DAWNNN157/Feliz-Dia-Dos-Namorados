@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Minha Princesa 💜</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,sans-serif;
+background:#09090d;
+color:#fff;
+overflow-x:hidden;
+}
+section{
+min-height:100vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 20px;
+}
+.bg{
+position:absolute;
+inset:0;
+background-size:cover;
+background-position:center;
+filter:brightness(.35);
+}
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom,rgba(20,10,30,.6),rgba(5,5,10,.85));
+}
+.content{
+position:relative;
+z-index:2;
+max-width:900px;
+width:100%;
+text-align:center;
+background:rgba(20,20,30,.45);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:24px;
+}
+h1,h2{margin-bottom:20px}
+p{
+line-height:1.8;
+white-space:pre-line;
+font-size:1.1rem;
+}
+.start-btn,.restart-btn{
+margin-top:25px;
+padding:14px 24px;
+border:none;
+border-radius:30px;
+background:#7c4dff;
+color:white;
+cursor:pointer;
+font-size:1rem;
+}
+.chapter7 .content{
+border:2px solid rgba(180,120,255,.5);
+}
+.heart{
+position:fixed;
+bottom:-20px;
+animation:float 10s linear infinite;
+opacity:.35;
+pointer-events:none;
+}
+@keyframes float{
+from{transform:translateY(0)}
+to{transform:translateY(-120vh)}
+}
+.final{
+font-size:1.4rem;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<audio id="musica" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<section id="inicio">
+<div class="bg"></div>
+<div class="overlay"></div>
+<div class="content">
+<h1>Feliz Dia dos Namorados, Minha Princesa 💜</h1>
+<p>Fiz isso especialmente para você.</p>
+<button class="start-btn" onclick="iniciar()">Começar nossa história 💜</button>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap1.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 1</h2>
+<p>Sem dúvidas, você foi a melhor coisa que aconteceu na minha vida.
+E foi nesse dia que eu percebi que queria viver ao seu lado pra sempre.
+
+E sem perceber… você foi virando meu lugar favorito.</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap2.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 2</h2>
+<p>Nós não temos foto do dia em que conversamos pela primeira vez, mas eu lembro de cada detalhe daquele dia...
+Foi nesse dia que percebi que você era a mulher que eu queria passar a vida ao lado.</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap3.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 3</h2>
+<p>Acho que amar alguém também é decorar os pequenos detalhes dela.</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap4.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 4</h2>
+<p>Você entrou na minha vida sem fazer barulho e acabou virando uma das partes mais importantes dela, quero te agradecer por alegrar meus dias, até os momentos simples se tornam especiais com você ao meu lado.
+
+A melhor parte dos meus dias sempre acaba sendo você.</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap5.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 5</h2>
+<p>Cada uma dessas lembranças me faz perceber o quanto amo viver tudo isso com você.</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap6.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 6</h2>
+<p>Amor, queria te agradecer por fazer meus dias serem mais alegres, em meio a tantas dificuldades, problemas e tristeza você apareceu. Você não só chegou na minha vida, você iluminou ela como uma luz no fim do túnel.
+
+Você me puxou de volta pra vida e escolheu me acolher, me amar e me ajudar.
+
+É por isso que me dedico todos os dias para ser alguém melhor para você.
+
+A melhor parte da minha vida foi encontrar alguém como você.</p>
+</div>
+</section>
+
+<section class="chapter7">
+<div class="bg" style="background-image:url('fotos/cap7.jpeg')"></div>
+<div class="overlay" style="background:rgba(80,20,120,.65)"></div>
+<div class="content">
+<h2>Capítulo 7</h2>
+<p>COLE AQUI O TEXTO COMPLETO QUE VOCÊ ESCREVEU SOBRE ELA 💜</p>
+</div>
+</section>
+
+<section>
+<div class="bg" style="background-image:url('fotos/cap8.jpeg')"></div>
+<div class="overlay"></div>
+<div class="content">
+<h2>Capítulo 8</h2>
+<p class="final">E se eu pudesse viver tudo de novo…<br>
+ainda escolheria você em todas as vezes.</p>
+
+<button class="restart-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+Recomeçar nossa história 💜
+</button>
+
+<p style="margin-top:20px">
+Feliz Dia dos Namorados, Minha Princesa ❤️
+</p>
+</div>
+</section>
+
+<script>
+function iniciar(){
+const audio=document.getElementById('musica');
+audio.volume=0.4;
+audio.play();
+window.scrollTo({top:window.innerHeight,behavior:'smooth'});
+}
+
+function heart(){
+const h=document.createElement('div');
+h.className='heart';
+h.innerHTML='💜';
+h.style.left=Math.random()*100+'vw';
+h.style.fontSize=(12+Math.random()*20)+'px';
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),10000);
+}
+setInterval(heart,800);
+</script>
+
+</body>
+</html>
