@@ -33,14 +33,52 @@ position:absolute;
 inset:0;
 background: linear-gradient(to bottom,rgba(20,10,30,.25),rgba(5,5,10,.45));
 }
-.content{
+.content{ 
+  <img src="fotos/fotos/cap2.jpeg" class="foto-grande">
+  <img src="fotos/fotos/cap3.jpeg" class="foto-grande">
+  <img src="fotos/fotos/cap5.jpeg" class="foto-grande">
+  
+  .foto-grande{
+    width:100%;
+    max-width:800px;
+    border-radius:20px;
+    margin:0 auto 25px auto;
+    display:block;
+}
+
+.content-lateral{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.content-lateral img{
+    width:45%;
+    border-radius:20px;
+}
+
+.content-lateral .texto{
+    width:55%;
+    text-align:left;
+}
+
+@media(max-width:768px){
+    .content-lateral{
+        flex-direction:column;
+    }
+
+    .content-lateral img,
+    .content-lateral .texto{
+        width:100%;
+    }
+}
 position:relative;
 z-index:2;
 max-width:900px;
 width:100%;
 text-align:center;
-background:rgba(20,20,30,.45);
-backdrop-filter:blur(10px);
+background:rgba(20,20,30,.25);
+backdrop-filter:blur(6px);
 padding:30px;
 border-radius:24px;
 }
@@ -99,7 +137,7 @@ font-weight:bold;
 <section>
 <div class="bg" style="background-image:url('fotos/fotos/cap1.jpeg')"></div>
 <div class="overlay"></div>
-<div class="content">
+<div class="content"> 
 <h2>Capítulo 1</h2>
 <p>Sem dúvidas, você foi a melhor coisa que aconteceu na minha vida.
 E foi nesse dia que eu percebi que queria viver ao seu lado pra sempre.
@@ -109,7 +147,6 @@ E sem perceber… você foi virando meu lugar favorito.</p>
 </section>
 
 <section>
-<div class="bg" style="background-image:url('fotos/fotos/cap2.jpeg')"></div>
 <div class="overlay"></div>
 <div class="content">
 <h2>Capítulo 2</h2>
@@ -119,7 +156,6 @@ Foi nesse dia que percebi que você era a mulher que eu queria passar a vida ao 
 </section>
 
 <section>
-<div class="bg" style="background-image:url('fotos/fotos/cap3.jpeg')"></div>
 <div class="overlay"></div>
 <div class="content">
 <h2>Capítulo 3</h2>
@@ -139,7 +175,6 @@ A melhor parte dos meus dias sempre acaba sendo você.</p>
 </section>
 
 <section>
-<div class="bg" style="background-image:url('fotos/fotos/cap5.jpeg')"></div>
 <div class="overlay"></div>
 <div class="content">
 <h2>Capítulo 5</h2>
@@ -148,23 +183,38 @@ A melhor parte dos meus dias sempre acaba sendo você.</p>
 </section>
 
 <section>
-<div class="bg" style="background-image:url('fotos/fotos/cap6.jpeg')"></div>
+
 <div class="overlay"></div>
-<div class="content">
+
+<div class="content content-lateral">
+
+<img src="fotos/fotos/cap6.jpeg">
+
+<div class="texto">
+
 <h2>Capítulo 6</h2>
-<p>Amor, queria te agradecer por fazer meus dias serem mais alegres, em meio a tantas dificuldades, problemas e tristeza você apareceu. Você não só chegou na minha vida, você iluminou ela como uma luz no fim do túnel.
+
+<p>
+Amor, queria te agradecer por fazer meus dias serem mais alegres, em meio a tantas dificuldades, problemas e tristeza você apareceu.
+
+Você não só chegou na minha vida, você iluminou ela como uma luz no fim do túnel.
 
 Você me puxou de volta pra vida e escolheu me acolher, me amar e me ajudar.
 
 É por isso que me dedico todos os dias para ser alguém melhor para você.
 
-A melhor parte da minha vida foi encontrar alguém como você.</p>
+A melhor parte da minha vida foi encontrar alguém como você.
+</p>
+
 </div>
+
+</div>
+
 </section>
 
 <section class="chapter7">
 <div class="bg" style="background-image:url('fotos/fotos/cap7.jpeg')"></div>
-<div class="overlay" style="background:rgba(80,20,120,.65)"></div>
+<div class="overlay" style="background:rgba(80,20,120,.20)"></div>
 <div class="content">
 <h2>Capítulo 7</h2>
 <p>Amor, quero te dizer q vc é mais q especial para mim, vc já é parte da minha vida e ja faz parte da vida que quero construir no futuro, 
@@ -185,7 +235,7 @@ A melhor parte da minha vida foi encontrar alguém como você.</p>
 </section>
 
 <section>
-<div class="bg" style="background-image:url('fotos/fotos/cap1.jpeg')"></div>
+<div class="bg" style="background-image:url('fotos/fotos/cap8.jpeg')"></div>
 <div class="overlay"></div>
 <div class="content">
 <h2>Capítulo 8</h2>
